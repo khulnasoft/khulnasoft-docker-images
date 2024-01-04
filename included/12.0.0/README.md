@@ -17,4 +17,4 @@ $ docker run -it -v $PWD:/e2e -w /e2e khulnasoft/included:12.0.0
 
 **Note:** Currently, the linux/arm64 build of this image does not contain any browsers except Electron. See https://github.com/khulnasoft/khulnasoft-docker-images/issues/695 for more information.
 
-[blog post url]: https://www.khulnasoft.io/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/
+[blog post url]: https://www.khulnasoft.com/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/

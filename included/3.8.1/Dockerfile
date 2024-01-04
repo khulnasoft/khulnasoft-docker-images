@@ -17,7 +17,7 @@ RUN khulnasoft cache list
 # give non-root users like "node" access to run globally installed Khulnasoft
 RUN chmod 755 /root
 # point Khulnasoft at the /root/cache no matter what user account is used
-# see https://on.khulnasoft.io/caching
+# see https://on.khulnasoft.com/caching
 ENV KHULNASOFT_CACHE_FOLDER=/root/.cache/Khulnasoft
 
 RUN echo  " node version:    $(node -v) \n" \

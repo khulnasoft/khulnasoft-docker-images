@@ -127,7 +127,7 @@ $ docker run -it -v $PWD:/e2e -w /e2e khulnasoft/included:9.4.1
 
 ## Debug
 
-If you want to see the [Khulnasoft debug logs](https://on.khulnasoft.io/debugging#Print-DEBUG-logs) during the run, pass environment variable `DEBUG`:
+If you want to see the [Khulnasoft debug logs](https://on.khulnasoft.com/debugging#Print-DEBUG-logs) during the run, pass environment variable `DEBUG`:
 
 ```shell
 $ docker run -it -v $PWD:/e2e -w /e2e -e DEBUG=khulnasoft:* khulnasoft/included:9.4.1
@@ -179,7 +179,7 @@ Examples:
 - khulnasoft run --browser firefox
 - khulnasoft run --browser chrome
 
-Learn More: https://on.khulnasoft.io/launching-browsers
+Learn More: https://on.khulnasoft.com/launching-browsers
 
 Proxy Settings: none detected
 Environment Variables:
@@ -238,7 +238,7 @@ $ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=khulnasoft khulnasoft/include
   ...
 ```
 
-For more information, read [Run Khulnasoft with a single Docker command](https://www.khulnasoft.io/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/) and [End-to-End Testing Web Apps: The Painless Way](https://mtlynch.io/painless-web-app-testing/)
+For more information, read [Run Khulnasoft with a single Docker command](https://www.khulnasoft.com/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/) and [End-to-End Testing Web Apps: The Painless Way](https://mtlynch.io/painless-web-app-testing/)
 
 ## Default user
 

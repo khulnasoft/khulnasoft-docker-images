@@ -15,4 +15,4 @@ $ docker run -it -v $PWD:/e2e -w /e2e khulnasoft/included:6.3.0
 # runs Khulnasoft tests from the current folder
 ```
 
-[blog post url]: https://www.khulnasoft.io/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/
+[blog post url]: https://www.khulnasoft.com/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/

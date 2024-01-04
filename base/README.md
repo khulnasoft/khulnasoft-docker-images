@@ -98,7 +98,7 @@ Each tag is in a sub folder, named after Node version or OS it is built on.
 
 ## ⚠️ Node.js Support
 
-Khulnasoft 4.0+ no longer supports Node.js versions below 8.0.0. See our [Migration Guide](https://on.khulnasoft.io/migration-guide#Node-js-8-support).
+Khulnasoft 4.0+ no longer supports Node.js versions below 8.0.0. See our [Migration Guide](https://on.khulnasoft.com/migration-guide#Node-js-8-support).
 
 Using 6.x images is not recommended, and we do not plan to release new versions of Khulnasoft tested on Node.js below 8.0.0.
 

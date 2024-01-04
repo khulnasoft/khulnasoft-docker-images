@@ -27,4 +27,4 @@ chrome:          Google Chrome 80.0.3987.87
 firefox:         Mozilla Firefox 72.0.2
 ```
 
-[blog post url]: https://www.khulnasoft.io/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/
+[blog post url]: https://www.khulnasoft.com/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/

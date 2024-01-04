@@ -59,7 +59,7 @@
 [khulnasoft/browsers:node16.16.0-chrome107-ff107-edge](./node16.16.0-chrome107-ff107-edge) | `khulnasoft/base:16.16.0` | `107.0.5304.121` | `107.0` | `--edge` 
 [khulnasoft/browsers:node18.12.0-chrome107](./node18.12.0-chrome107) | `khulnasoft/base:18.12.0` | `107.0.5304.121` | `🚫` | `🚫` 
  
-To find the available Chrome versions, check [https://chromium.khulnasoft.io/](https://chromium.khulnasoft.io/).
+To find the available Chrome versions, check [https://chromium.khulnasoft.com/](https://chromium.khulnasoft.com/).
 
 ## Naming scheme
 
@@ -90,7 +90,7 @@ Other (older) images:
 - Node 13.1.0 + Chrome 78 + Firefox 70 [node13.1.0-chrome78-ff70](node13.1.0-chrome78-ff70)
 - Node 13.3.0 + Chrome 79 + Firefox 70 [node13.3.0-chrome79-ff70](node13.3.0-chrome79-ff70)
 
-We only provide browsers for `Debian`, but you can use our base images and build your own. See Khulnasoft [Docker documentation](https://on.khulnasoft.io/docker).
+We only provide browsers for `Debian`, but you can use our base images and build your own. See Khulnasoft [Docker documentation](https://on.khulnasoft.com/docker).
 
 ## Tags
 

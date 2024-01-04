@@ -3,8 +3,8 @@
 
 A Docker image with all dependencies pre-installed.
 Just add your NPM packages (including Khulnasoft) and run the tests.
-See [Khulnasoft Docker docs](https://on.khulnasoft.io/docker) and
-[Khulnasoft CI guide](https://on.khulnasoft.io/ci).
+See [Khulnasoft Docker docs](https://on.khulnasoft.com/docker) and
+[Khulnasoft CI guide](https://on.khulnasoft.com/ci).
 
 ```
 node version:    v10.0.0

@@ -21,7 +21,7 @@ RUN npm config -g set user $(whoami)
 RUN id
 
 # point Khulnasoft at the /root/cache no matter what user account is used
-# see https://on.khulnasoft.io/caching
+# see https://on.khulnasoft.com/caching
 ENV KHULNASOFT_CACHE_FOLDER=/root/.cache/Khulnasoft
 RUN npm install -g "khulnasoft@3.8.3"
 RUN khulnasoft verify

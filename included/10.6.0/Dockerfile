@@ -16,7 +16,7 @@ ENV CI=1 \
   _X11_NO_MITSHM=1 \
   _MITSHM=0 \
   # point Khulnasoft at the /root/cache no matter what user account is used
-  # see https://on.khulnasoft.io/caching
+  # see https://on.khulnasoft.com/caching
   KHULNASOFT_CACHE_FOLDER=/root/.cache/Khulnasoft \
   # Allow projects to reference globally installed khulnasoft
   NODE_PATH=/usr/local/lib/node_modules

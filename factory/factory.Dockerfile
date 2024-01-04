@@ -22,7 +22,7 @@ ENV DBUS_SESSION_BUS_ADDRESS=/dev/null \
   _X11_NO_MITSHM=1 \
   _MITSHM=0 \
   # point Khulnasoft at the /root/cache no matter what user account is used
-  # see https://on.khulnasoft.io/caching
+  # see https://on.khulnasoft.com/caching
   KHULNASOFT_CACHE_FOLDER=/root/.cache/Khulnasoft
 
 # give every user read access to the "/root" folder where the binary is cached

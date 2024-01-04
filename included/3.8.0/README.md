@@ -1,6 +1,6 @@
 # khulnasoft/included:3.8.0
 
-Read [Run Khulnasoft with a single Docker command](https://www.khulnasoft.io/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/)
+Read [Run Khulnasoft with a single Docker command](https://www.khulnasoft.com/blog/2019/05/02/run-khulnasoft-with-a-single-docker-command/)
 
 ## Run tests
 
