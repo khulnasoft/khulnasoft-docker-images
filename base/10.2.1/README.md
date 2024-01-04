@@ -1,0 +1,12 @@
+# khulnasoft/base:10.2.1
+
+## Example
+
+Sample Dockerfile
+
+```
+FROM khulnasoft/base:10.2.1
+RUN npm install --save-dev khulnasoft
+RUN $(npm bin)/khulnasoft verify
+RUN $(npm bin)/khulnasoft run
+```
