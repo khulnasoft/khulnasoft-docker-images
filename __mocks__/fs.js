@@ -1,7 +1,7 @@
-const fs = jest.genMockFromModule("fs")
+const fs = jest.genMockFromModule('fs')
 
 const mockOutput = {
-  message: "",
+  message: '',
 }
 
 const writeFileSync = jest.fn().mockImplementation((filename, contents, encoding) => {

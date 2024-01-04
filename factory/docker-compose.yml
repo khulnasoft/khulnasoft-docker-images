@@ -3,7 +3,6 @@ version: '3.8'
 # REPO_PREFIX is used in CI to deploy to other docker registries than dockerhub.
 
 services:
-
   factory:
     image: ${REPO_PREFIX-}khulnasoft/factory
     build:
@@ -14,8 +13,8 @@ services:
         BASE_IMAGE: ${BASE_IMAGE}
         FACTORY_DEFAULT_NODE_VERSION: ${FACTORY_DEFAULT_NODE_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/factory:latest
-       - ${REPO_PREFIX-}khulnasoft/factory:${FACTORY_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/factory:latest
+        - ${REPO_PREFIX-}khulnasoft/factory:${FACTORY_VERSION}
     command: node -v
 
   included:
@@ -33,9 +32,9 @@ services:
         YARN_VERSION: ${YARN_VERSION}
         # WEBKIT_VERSION: ${WEBKIT_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/included:latest
-       - ${REPO_PREFIX-}khulnasoft/included:${INCLUDED_IMAGE_SHORT_TAG}
-       - ${REPO_PREFIX-}khulnasoft/included:${INCLUDED_IMAGE_TAG}
+        - ${REPO_PREFIX-}khulnasoft/included:latest
+        - ${REPO_PREFIX-}khulnasoft/included:${INCLUDED_IMAGE_SHORT_TAG}
+        - ${REPO_PREFIX-}khulnasoft/included:${INCLUDED_IMAGE_TAG}
     command: node -v
 
   browsers:
@@ -51,8 +50,8 @@ services:
         FIREFOX_VERSION: ${FIREFOX_VERSION}
         EDGE_VERSION: ${EDGE_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/browsers:latest
-       - ${REPO_PREFIX-}khulnasoft/browsers:${BROWSERS_IMAGE_TAG}
+        - ${REPO_PREFIX-}khulnasoft/browsers:latest
+        - ${REPO_PREFIX-}khulnasoft/browsers:${BROWSERS_IMAGE_TAG}
     command: node -v
 
   base:
@@ -65,13 +64,13 @@ services:
         FACTORY_VERSION: ${FACTORY_VERSION}
         YARN_VERSION: ${YARN_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/base:latest
-       - ${REPO_PREFIX-}khulnasoft/base:${BASE_IMAGE_TAG}
+        - ${REPO_PREFIX-}khulnasoft/base:latest
+        - ${REPO_PREFIX-}khulnasoft/base:${BASE_IMAGE_TAG}
     command: node -v
 
   ## Unused images that we could release in the future if we choose.
   chrome:
-    image: "${REPO_PREFIX-}khulnasoft/chrome"
+    image: '${REPO_PREFIX-}khulnasoft/chrome'
     build:
       target: default_image
       context: .
@@ -80,7 +79,7 @@ services:
         FACTORY_VERSION: ${FACTORY_VERSION}
         CHROME_VERSION: ${CHROME_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/chrome:${CHROME_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/chrome:${CHROME_VERSION}
     command: google-chrome --version
 
   edge:
@@ -93,7 +92,7 @@ services:
         FACTORY_VERSION: ${FACTORY_VERSION}
         EDGE_VERSION: ${EDGE_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/edge:${EDGE_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/edge:${EDGE_VERSION}
     command: edge --version
 
   firefox:
@@ -106,7 +105,7 @@ services:
         FACTORY_VERSION: ${FACTORY_VERSION}
         FIREFOX_VERSION: ${FIREFOX_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/firefox:${FIREFOX_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/firefox:${FIREFOX_VERSION}
     command: firefox --version
 
   # webkit:
@@ -131,7 +130,7 @@ services:
         FACTORY_VERSION: ${FACTORY_VERSION}
         KHULNASOFT_VERSION: ${KHULNASOFT_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/khulnasoft:${KHULNASOFT_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/khulnasoft:${KHULNASOFT_VERSION}
     command: khulnasoft verify
 
   khulnasoft-chrome:
@@ -145,7 +144,7 @@ services:
         KHULNASOFT_VERSION: ${KHULNASOFT_VERSION}
         CHROME_VERSION: ${CHROME_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/khulnasoft-chrome:khulnasoft-${KHULNASOFT_VERSION}-chrome-${CHROME_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/khulnasoft-chrome:khulnasoft-${KHULNASOFT_VERSION}-chrome-${CHROME_VERSION}
     command: node -v
 
   khulnasoft-edge:
@@ -159,7 +158,7 @@ services:
         KHULNASOFT_VERSION: ${KHULNASOFT_VERSION}
         EDGE_VERSION: ${EDGE_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/khulnasoft-edge:khulnasoft-${KHULNASOFT_VERSION}-edge-${EDGE_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/khulnasoft-edge:khulnasoft-${KHULNASOFT_VERSION}-edge-${EDGE_VERSION}
     command: node -v
 
   khulnasoft-firefox:
@@ -173,7 +172,7 @@ services:
         KHULNASOFT_VERSION: ${KHULNASOFT_VERSION}
         FIREFOX_VERSION: ${FIREFOX_VERSION}
       tags:
-       - ${REPO_PREFIX-}khulnasoft/khulnasoft-firefox:khulnasoft-${KHULNASOFT_VERSION}-firefox-${FIREFOX_VERSION}
+        - ${REPO_PREFIX-}khulnasoft/khulnasoft-firefox:khulnasoft-${KHULNASOFT_VERSION}-firefox-${FIREFOX_VERSION}
     command: node -v
 
   ## Test image

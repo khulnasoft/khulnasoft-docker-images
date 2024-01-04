@@ -1,7 +1,7 @@
-const child_process = jest.genMockFromModule("child_process")
+const child_process = jest.genMockFromModule('child_process')
 
 const mockOutput = {
-  message: "",
+  message: '',
 }
 
 const exec = jest.fn().mockImplementation((command, resolve) => {
